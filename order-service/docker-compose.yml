@@ -1,7 +1,7 @@
 services:
   mysql:
     image: mysql:8.4
-    container_name: mysql
+    container_name: order-mysql
     restart: unless-stopped
     environment:
       MYSQL_ROOT_PASSWORD: 123456
