@@ -1,6 +1,6 @@
 package com.techie.microservice.order.service;
 
-import com.techie.microservice.order.client.IventoryClient;
+import com.techie.microservice.order.client.InventoryClient;
 import com.techie.microservice.order.dto.OrderRequest;
 import lombok.RequiredArgsConstructor;
 import com.techie.microservice.order.model.Order;
@@ -13,7 +13,7 @@ import java.util.UUID;
 @RequiredArgsConstructor
 public class OrderService implements IOrderService{
     private  final OrderRepository orderRepository;
-    private final IventoryClient iventoryClient;
+    private final InventoryClient iventoryClient;
 
     @Override
     public void placeOrder(OrderRequest orderRequest) {
